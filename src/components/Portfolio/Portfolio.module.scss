@@ -1,0 +1,84 @@
+@import "../../styles/contants.scss";
+
+.wrapper {
+  background: white;
+  overflow: hidden;
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+    .heading {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      > :nth-child(2) a:link {
+        text-decoration: underline;
+        color: orange;
+        cursor: pointer;
+      }
+      a:visited {
+        color: orange;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    }
+    .showCase {
+      width: 100%;
+      gap: 1.5rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      > img {
+        @media (max-width: $sm) {
+          width: 100%;
+        }
+        border-radius: 20px;
+        max-width: 25rem;
+        max-height: 18rem;
+        box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  color: white;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
