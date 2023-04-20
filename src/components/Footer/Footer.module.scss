@@ -13,6 +13,7 @@
 
     .left {
       flex: 3;
+      padding-left: 15px;
 
       > * {
         display: block;
@@ -28,6 +29,8 @@
 
     .right {
       flex: 1;
+      padding-left: 35px;
+     
 
       .info {
         margin-bottom: 1rem;
@@ -43,6 +46,10 @@
       }
       .menu {
         @media (max-width: $sm) {
+          padding-left: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           flex-direction: row;
           flex-wrap: wrap;
         }
@@ -61,4 +68,5 @@
       }
     }
   }
+
 }
