@@ -41,7 +41,7 @@ const Hero = () => {
         >
           <motion.img
             variants={slideIn("up", "tween", 0.5, 1.3)}
-            src="/gocrazy.jpg"
+            src="/bitmoji.png"
             alt=""
           />
         </motion.div>
