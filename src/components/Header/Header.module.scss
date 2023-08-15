@@ -17,6 +17,9 @@
       font-size: 2.5rem;
       font-weight: 800;
       font-family: Georgia, "Times New Roman", Times, serif;
+      cursor: pointer;
+      list-style: none;
+      text-decoration: none;
     }
     .menuIcon {
       @media (max-width: $xl), (max-width: $xxl), (max-width: $lg) {

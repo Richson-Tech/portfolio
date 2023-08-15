@@ -25,8 +25,12 @@ const Header = () => {
       className={`paddings ${css.wrapper}`}
       style={{ boxShadow: headerShadow }}
     >
+      <a className="anchor" id="header"></a>
+
       <div className={`flexCenter innerWidth ${css.container}`}>
-        <div className={css.name}>FA</div>
+        <ul className={css.name}>
+          <a href="#header">FA</a>
+        </ul>
         <ul
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
