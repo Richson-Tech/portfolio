@@ -56,9 +56,9 @@ const Hero = () => {
             variants={fadeIn("right", "tween", 0.3, 1)}
             className={css.experience}
           >
-            <div className="primaryText">1</div>
+            <div className="primaryText">2</div>
             <div className="secondText">
-              <div>Year +</div>
+              <div>Years</div>
               <div>Experience</div>
             </div>
           </motion.div>
